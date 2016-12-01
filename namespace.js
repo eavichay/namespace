@@ -1,5 +1,5 @@
-+(function(document) {
-    document.namespace = function namespace(name) {
+;(function() {
+    var namespace = function namespace(name) {
         var parts = name.split('.');
         var parent = window || GLOBAL || global;
         var currentPart = '';
@@ -12,4 +12,4 @@
 
         return parent;
     }
-})(document)
+})()
